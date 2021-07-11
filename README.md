@@ -5,7 +5,7 @@ Keno-bet is a keno game made with c++
 
 ## Compilation
 
-1. In terminal "cd" into the project folder, after that writes the command 
+1. In terminal "cd" into the project folder, after that write the command 
 
 ```bash
 g++ -Wall -std=c++11 game.cpp KenoBet.cpp -o game
