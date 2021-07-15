@@ -28,7 +28,25 @@ set_of_numbers_type lottery()
 
 }
 
+/*
+Avaliação
+Processamento do Arquivo de Entrada: 0,3 (faltou o o caso quando o arquivo tem menos de 3 linhas, segfault quando tem mais de 15 numeros na aposta, ignora, mas não dá erro quando tem numeros repetidos, caracteres estranhos e letras)
+Execução correta: 0,6 (segfault com 15 números)
+Interfcace Textual: 1
+Documentação: 1
+Compilação automatizada: 0 (não fez)  
+Organização em src, include, build, data: 0 (não fez)
 
+Comentários
+- Eu esperava ao menos mais um arquivo com funções fora o kenobet.h/cpp, no entanto a maioria das funcionalidades
+está implementada aqui. Uma sugestão seria vc fazer um arquivo para interface textual e outro pra processar o arquivo
+de entrada.
+- Embora dê segfault quando eu uso 15 numeros (pois você está endereçando errado a tabela de payout), a maior
+parte da implementação está ok
+- Vi que você implementou o insertion sort, mas foi algo meio pontual e dependente da classe KenoBet, usualmente era
+de se esperar que você já tivesse a ciencia para separar essa parte de ordenação em um arquivo(h e cpp) separado.
+- Para o próximo trabalho sugiro que invista na compilação automatica usando makefile ou cmake(recomendado)
+*/
 
 int main ( int argc, char * argv[] )
 {
